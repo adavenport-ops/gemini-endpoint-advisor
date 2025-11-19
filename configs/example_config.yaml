@@ -1,0 +1,9 @@
+min_macos_version: "14.5"
+max_versions_behind: 2
+require_filevault: true
+require_firewall: true
+max_noncompliant_percentage: 10
+slack:
+  title: "Weekly Endpoint Posture Summary"
+  channel: "#client-platform"
+  include_emojis: true

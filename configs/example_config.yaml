@@ -1,8 +1,14 @@
-min_macos_version: "14.5"
-max_versions_behind: 2
-require_filevault: true
-require_firewall: true
-max_noncompliant_percentage: 10
+# Example policy configuration for Gemini Endpoint Advisor
+
+min_macos_version: "14.5"          # Minimum supported macOS version
+max_versions_behind: 2             # How many major versions behind is acceptable
+
+require_filevault: true            # Should FileVault be enabled?
+require_firewall: true             # Should macOS firewall be enabled?
+
+# Thresholds for flagging issues in the summary
+max_noncompliant_percentage: 10    # If >10% of devices are noncompliant, call it out as high risk
+
 slack:
   title: "Weekly Endpoint Posture Summary"
   channel: "#client-platform"

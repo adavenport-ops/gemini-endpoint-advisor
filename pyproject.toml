@@ -16,6 +16,9 @@ dependencies = [
   "pyyaml",
 ]
 
+[project.urls]
+Homepage = "https://github.com/your-username/gemini-endpoint-advisor"
+
 [project.scripts]
 gemini-endpoint-advisor = "gemini_endpoint_advisor.cli:main"
 
